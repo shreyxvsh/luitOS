@@ -1,0 +1,26 @@
+{
+  "initial_cylinder": 70,
+  "requests": [
+    {
+      "rid": "A",
+      "arrival": 0,
+      "cylinder": 90,
+      "sector": 1,
+      "length": 1
+    },
+    {
+      "rid": "B",
+      "arrival": 1,
+      "cylinder": 70,
+      "sector": 3,
+      "length": 1
+    },
+    {
+      "rid": "C",
+      "arrival": 2,
+      "cylinder": 71,
+      "sector": 8,
+      "length": 1
+    }
+  ]
+}

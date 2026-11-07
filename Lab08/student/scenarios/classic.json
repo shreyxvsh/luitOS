@@ -1,0 +1,55 @@
+{
+  "initial_cylinder": 50,
+  "initial_direction": 1,
+  "requests": [
+    {
+      "rid": "A",
+      "arrival": 0,
+      "cylinder": 82,
+      "sector": 0,
+      "length": 1
+    },
+    {
+      "rid": "B",
+      "arrival": 0,
+      "cylinder": 170,
+      "sector": 1,
+      "length": 1
+    },
+    {
+      "rid": "C",
+      "arrival": 0,
+      "cylinder": 43,
+      "sector": 2,
+      "length": 1
+    },
+    {
+      "rid": "D",
+      "arrival": 0,
+      "cylinder": 140,
+      "sector": 3,
+      "length": 1
+    },
+    {
+      "rid": "E",
+      "arrival": 0,
+      "cylinder": 24,
+      "sector": 4,
+      "length": 1
+    },
+    {
+      "rid": "F",
+      "arrival": 0,
+      "cylinder": 16,
+      "sector": 5,
+      "length": 1
+    },
+    {
+      "rid": "G",
+      "arrival": 0,
+      "cylinder": 190,
+      "sector": 6,
+      "length": 1
+    }
+  ]
+}
