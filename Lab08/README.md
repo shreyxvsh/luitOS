@@ -4,7 +4,7 @@
 
 Use the handout (`Lab08_Student_Handout.pdf` or `.docx`) for the disk model and exercises. This is a small, deterministic HDD timing simulator; it is **not** a patch to the LUIT kernel or a measurement of a real disk. Work in a scratch directory. Python 3 standard library is sufficient.
 
-From this `student/` directory, first run the built-in baseline checks and FCFS example:
+From this `Lab08/` directory, first run the built-in baseline checks and FCFS example:
 
 ```bash
 PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_baseline.py' -v
