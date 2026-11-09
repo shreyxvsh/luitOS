@@ -54,14 +54,14 @@ def select_sstf(ready, now, cylinder, direction):
     return min(ready,key=lambda r:(abs(r.cylinder-cylinder),r.arrival,r.rid)), direction
 
 def select_look(ready, now, cylinder, direction):
-    # TODO (students): LOOK, using only arrived requests; preserve direction
-    # until no requests remain on that side, then reverse. Tie by arrival, rid.
-    raise NotImplementedError('Implement LOOK')
+    candidates = [r for r in ready if (r.cylinder >= cylinder if direction == 1 else r.cylinder <= cylinder)]
+    if not candidates:
+        direction = -direction
+        candidates = [r for r in ready if (r.cylinder >= cylinder if direction == 1 else r.cylinder <= cylinder)]
+    return min(candidates, key=lambda r: (abs(r.cylinder - cylinder), r.arrival, r.rid)), direction
 
 def select_satf(ready, now, cylinder, direction):
-    # TODO (students): minimize modeled seek+rotation+transfer time;
-    # tie by arrival, rid. Do not minimize only seek distance.
-    raise NotImplementedError('Implement SATF')
+    return min(ready, key=lambda r: (sum(service_estimate(r, now, cylinder)), r.arrival, r.rid)), direction
 
 POLICIES={'fcfs':select_fcfs,'sstf':select_sstf,'look':select_look,'satf':select_satf}
 
